@@ -349,9 +349,12 @@ sign_in_module_ns <- function(input, output, session) {
 
         shinyWidgets::sendSweetAlert(
           session,
-          title = "Not Authorized",
-          text = "You must have an invite to access this app",
-          type = "error"
+          title = "Nice Try",
+          text = "<img src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3RnbnYybHR1eG5xYjVnajdrYzlwNmloenU0MTJuM3B6aXFqNmV0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TuonDmtbj5nclcyJ9R/giphy.gif' alt='GIF' style='width:100%;'><br><br>Sabía que ibas a probarlo, pero aún tienes que esperar un poquito. Lo siento.",
+          # text = "Sabía que ibas a probarlo, pero aún tienes que esperar un poco.",
+          btn_labels = c("OK", "Not OK"),
+          type = "error",
+          html = TRUE
         )
 
       } else {
