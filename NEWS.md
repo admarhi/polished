@@ -1,3 +1,5 @@
+# polished (development version)
+
 # polished v0.8.1
 
 - bug fix to correct registration flow for email invite required
